@@ -10,7 +10,8 @@ func _ready():
 	dialog_animator.connect("animation_step", self, "_on_animation_step")
 	dialog_animator.connect("animation_finished", self, "_on_animation_finished")
 	
-	dialog_animator.start_animation(text_label.bbcode_text, 0.5)
+	var delay = 0.25
+	dialog_animator.start_animation(text_label.bbcode_text, delay)
 
 
 func _on_animation_started():
