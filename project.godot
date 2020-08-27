@@ -15,5 +15,5 @@ _global_script_class_icons={
 
 [application]
 
-config/name="GodotUtils"
+config/name="godot-utils"
 config/icon="res://Assets/icon.png"
