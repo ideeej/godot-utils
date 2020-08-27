@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Dialog Utils/DialogBox/DialogBox.gd" type="Script" id=1]
-[ext_resource path="res://Dialog Utils/DialogBox/TextManager.gd" type="Script" id=2]
+[ext_resource path="res://Dialog Utils/DialogBox/DialogSaver.gd" type="Script" id=2]
 [ext_resource path="res://Dialog Utils/DialogBox/DialogAnimator.gd" type="Script" id=3]
 
 [node name="Control" type="Control"]
@@ -46,9 +46,9 @@ bbcode_text = "[color=#F0F]Lorem ipsum dolor sit amet[/color], consectetur adipi
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus quam pellentesque nec nam aliquam sem. At ultrices mi tempus imperdiet nulla malesuada pellentesque. Porttitor massa id neque aliquam vestibulum morbi blandit. Nunc sed velit dignissim sodales ut eu sem integer vitae. Eu nisl nunc mi ipsum faucibus vitae. Cursus metus aliquam eleifend mi. Ullamcorper a lacus vestibulum sed arcu non. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Tincidunt eget nullam non nisi est sit amet. Varius quam quisque id diam. Non odio euismod lacinia at quis. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Massa vitae tortor condimentum lacinia quis vel. "
 scroll_following = true
 selection_enabled = true
-script = ExtResource( 2 )
 
 [node name="DialogAnimator" type="Node" parent="."]
 script = ExtResource( 3 )
 
 [node name="DialogSaver" type="Node" parent="."]
+script = ExtResource( 2 )
