@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+[node name="world" type="Spatial"]
+
+[node name="Environment" type="Node" parent="."]
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Environment"]
+transform = Transform( -0.661578, 0.61082, -0.434987, -0.48215, 0.0977812, 0.870615, 0.574323, 0.785709, 0.229817, -62.8567, 19.1357, 0 )
+shadow_enabled = true
+
+[node name="Ground" type="CSGBox" parent="Environment"]
+width = 100.0
+height = 0.5
+depth = 100.0
+material = SubResource( 1 )
+
+[node name="Box" type="CSGBox" parent="Environment"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -31.7788, 5, -36.2185 )
+
+[node name="Box2" type="CSGBox" parent="Environment"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 21.8696, 5, -36.2185 )
+
+[node name="Box3" type="CSGBox" parent="Environment"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 21.2188, 5, 36.8027 )
+
+[node name="Box4" type="CSGBox" parent="Environment"]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -31.5452, 5, 36.8027 )
+
+[node name="Wall" type="CSGBox" parent="Environment"]
+transform = Transform( 5, 0, 0, 0, 10, 0, 0, 0, 32, 32, 10, 0 )
+layers = 512

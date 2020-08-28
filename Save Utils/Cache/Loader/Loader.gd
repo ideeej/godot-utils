@@ -12,7 +12,7 @@ func _ready():
 	# Stores it in RAM (I think)
 	# MAYBE... this is bad, but i don't think i will ever have more than 500MB
 	# Should be fiiiiine...
-	var loaded = _load_all_resources_from("res://Assets")
+	var loaded = _load_all_resources_from("res://Dialog Utils/DialogBox/Assets")
 	if loaded == OK:
 		print("========== Loader ==========")
 		print("")
@@ -23,7 +23,7 @@ func _ready():
 
 func _on_loading_status(dir, status):
 	if status != OK:
-		print("[LOADING STATUS] %s for directory %s" % [status, dir])
+		print("[LOADING ERROR] %s for directory %s" % [status, dir])
 
 
 func get_resource(resource_name):
